@@ -7,7 +7,6 @@
        android:id="@+id/fl_tab_content"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       android:background="@color/material_on_primary_emphasis_medium"
        android:layout_marginBottom="52dp"/>
 
     <com.example.wanandroid_lyf_java_mvp.ui.view.BottomBar
