@@ -21,18 +21,6 @@ public class TestActivity extends BaseActivity<TestPresenter> implements TestVie
         return R.layout.layout_test;
     }
 
-//    @Override
-//    public MvpPresenter initPresenter() {
-//        return new TestPresenter();
-//    }
-
-
-//    @Override
-//    public TestPresenter initPresenter() {
-//        return new TestPresenter();
-//    }
-
-
     @Override
     public TestPresenter initPresenter() {
         return new TestPresenter();
