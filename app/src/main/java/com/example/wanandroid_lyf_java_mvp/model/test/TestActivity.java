@@ -1,5 +1,6 @@
 package com.example.wanandroid_lyf_java_mvp.model.test;
 
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -40,6 +41,11 @@ public class TestActivity extends BaseActivity<TestPresenter> implements TestVie
     @Override
     public void loadData() {
 
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override

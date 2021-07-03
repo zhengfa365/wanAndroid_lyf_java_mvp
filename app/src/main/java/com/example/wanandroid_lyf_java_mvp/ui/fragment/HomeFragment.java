@@ -9,24 +9,54 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.wanandroid_lyf_java_mvp.R;
+import com.example.wanandroid_lyf_java_mvp.basic.base.BaseFragment;
+import com.example.wanandroid_lyf_java_mvp.basic.mvp.MvpPresenter;
 
-import me.yokeyword.fragmentation.ISupportFragment;
-import me.yokeyword.fragmentation.SupportFragment;
 
-public class HomeFragment extends SupportFragment {
+public class HomeFragment extends BaseFragment {
     public static HomeFragment newInstance() {
         HomeFragment fragment=new HomeFragment();
         return fragment;
     }
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable  ViewGroup container, @Nullable  Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
-        initView(view);
-        return view;
+    protected int getLayoutRes() {
+        return R.layout.fragment_home;
     }
 
+    @Override
+    protected MvpPresenter initPresenter() {
+        return null;
+    }
+
+//    @Override
+//    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable  ViewGroup container, @Nullable  Bundle savedInstanceState) {
+//        View view = inflater.inflate(R.layout.fragment_home, container, false);
+//        initView(view);
+//        return view;
+//    }
+
+    @Override
+    protected void loadData() {
+
+    }
+
+    @Override
+    protected void initView() {
+
+    }
+
+
     private void initView(View view) {
+    }
+
+    @Override
+    public void showLoading() {
+
+    }
+
+    @Override
+    public void dismissLoading() {
+
     }
 }

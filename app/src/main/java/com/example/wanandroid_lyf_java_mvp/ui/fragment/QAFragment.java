@@ -9,14 +9,25 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.wanandroid_lyf_java_mvp.R;
+import com.example.wanandroid_lyf_java_mvp.basic.base.BaseFragment;
+import com.example.wanandroid_lyf_java_mvp.basic.mvp.MvpPresenter;
 
-import me.yokeyword.fragmentation.ISupportFragment;
-import me.yokeyword.fragmentation.SupportFragment;
 
-public class QAFragment extends SupportFragment {
+
+public class QAFragment extends BaseFragment {
     public static QAFragment newInstance() {
         QAFragment fragment=new QAFragment();
         return fragment;
+    }
+
+    @Override
+    protected int getLayoutRes() {
+        return 0;
+    }
+
+    @Override
+    protected MvpPresenter initPresenter() {
+        return null;
     }
 
     @Nullable
@@ -27,6 +38,26 @@ public class QAFragment extends SupportFragment {
         return view;
     }
 
+    @Override
+    protected void loadData() {
+
+    }
+
+    @Override
+    protected void initView() {
+
+    }
+
     private void initView(View view) {
+    }
+
+    @Override
+    public void showLoading() {
+
+    }
+
+    @Override
+    public void dismissLoading() {
+
     }
 }
