@@ -1,6 +1,6 @@
-package com.example.lyfwanandroid.mvp;
+package com.example.lib.core.mvp;
 
-import com.example.lyfwanandroid.core.RxLife;
+import com.example.lib.core.RxLife;
 
 import io.reactivex.disposables.Disposable;
 
@@ -10,7 +10,7 @@ public class BasePresenter extends MvpPresenter{
     @Override
     public void attach(MvpView baseView) {
         super.attach(baseView);
-        rxLife=RxLife.create();
+        rxLife= RxLife.create();
     }
 
     @Override

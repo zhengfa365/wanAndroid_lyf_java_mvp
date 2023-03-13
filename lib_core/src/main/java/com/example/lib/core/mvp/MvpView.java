@@ -1,4 +1,4 @@
-package com.example.lyfwanandroid.mvp;
+package com.example.lib.core.mvp;
 
 import android.content.Context;
 

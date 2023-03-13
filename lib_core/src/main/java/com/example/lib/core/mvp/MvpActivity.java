@@ -1,4 +1,4 @@
-package com.example.lyfwanandroid.mvp;
+package com.example.lib.core.mvp;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -21,7 +21,7 @@ public abstract class MvpActivity<P extends MvpPresenter> extends AppCompatActiv
 
     abstract void loadData();
 
-    protected void initialize(){
+    protected void initialize() {
         initView();
         loadData();
     }

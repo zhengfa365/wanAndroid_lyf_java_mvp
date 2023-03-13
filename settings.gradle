@@ -3,6 +3,8 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven { url "https://www.jitpack.io" }
+        maven { url "https://gitee.com/goweii/maven-repository/raw/master/releases/" }
     }
 }
 dependencyResolutionManagement {
@@ -10,7 +12,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://www.jitpack.io" }
+        maven { url "https://gitee.com/goweii/maven-repository/raw/master/releases/" }
     }
 }
 rootProject.name = "LyfWanAndroid"
 include ':app'
+include ':lib_core'

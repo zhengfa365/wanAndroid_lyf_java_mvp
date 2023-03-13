@@ -1,4 +1,4 @@
-package com.example.lyfwanandroid.core;
+package com.example.lib.core;
 
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;

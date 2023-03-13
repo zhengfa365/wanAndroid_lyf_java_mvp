@@ -1,6 +1,4 @@
-package com.example.lyfwanandroid.mvp;
-
-import android.content.Context;
+package com.example.lib.core.mvp;
 
 public class MvpPresenter<V extends MvpView> {
 //    Context context;
