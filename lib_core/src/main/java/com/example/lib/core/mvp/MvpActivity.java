@@ -13,13 +13,13 @@ public abstract class MvpActivity<P extends MvpPresenter> extends AppCompatActiv
     void initWindow() {
     }
 
-    abstract int getLayoutId();
+    protected abstract int getLayoutId();
 
-    abstract P initPresenter();
+    protected abstract P initPresenter();
 
-    abstract void initView();
+    protected abstract void initView();
 
-    abstract void loadData();
+    protected abstract void loadData();
 
     protected void initialize() {
         initView();
@@ -27,8 +27,8 @@ public abstract class MvpActivity<P extends MvpPresenter> extends AppCompatActiv
     }
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         initWindow();
         if (getLayoutId() > 0) {
             setContentView(getLayoutId());

@@ -14,20 +14,20 @@ public abstract class MvpFragment<T extends MvpPresenter> extends Fragment imple
     private View mRootView = null;
     private T presenter;
 
-    abstract int getLayoutRes();
+    protected abstract int getLayoutRes();
 
-    abstract T initPresenter();
+    protected abstract T initPresenter();
 
-    abstract void loadData();
+    protected abstract void loadData();
 
-    abstract void initView();
+    protected abstract void initView();
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         if (mRootView == null) {
             if (getLayoutRes() > 0) {
-                mRootView = getLayoutInflater().inflate(getLayoutRes(), container, false);
+                mRootView = inflater.inflate(getLayoutRes(), container, false);
             }
         }
         return mRootView;
@@ -56,7 +56,9 @@ public abstract class MvpFragment<T extends MvpPresenter> extends Fragment imple
 
     @Override
     public void onDestroyView() {
-        presenter.detach();
+//        if(presenter!=null){
+            presenter.detach();
+//        }
         super.onDestroyView();
     }
 
