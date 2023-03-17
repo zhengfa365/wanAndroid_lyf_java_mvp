@@ -54,12 +54,14 @@ public class TabFragmentPagerAdapter extends FragmentPagerAdapter implements Vie
         params.weight = 1;
         mTabContainer.addView(page.view, params);
         mViewPager.setOnPageChangeListener(this);
-        page.view.setOnClickListener(view -> { setCurrentPage(page); });
+        page.view.setOnClickListener(view -> {
+            setCurrentPage(page);
+        });
     }
 
     private void setCurrentPage(Page page) {
-        for(int i=0;i<mPages.length;i++){
-            if(mPages[i]==page){
+        for (int i = 0; i < mPages.length; i++) {
+            if (mPages[i] == page) {
                 mViewPager.setCurrentItem(i);
             }
         }

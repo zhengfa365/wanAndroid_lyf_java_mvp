@@ -1,8 +1,6 @@
-package com.example.lyfwanandroid.fragment;
+package com.example.lyfwanandroid.module.main.fragment;
 
-import android.view.Gravity;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import androidx.viewpager.widget.ViewPager;
 

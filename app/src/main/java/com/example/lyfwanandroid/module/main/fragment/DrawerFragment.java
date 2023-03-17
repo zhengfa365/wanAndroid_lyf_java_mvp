@@ -1,6 +1,4 @@
-package com.example.lyfwanandroid.fragment;
-
-import android.widget.TextView;
+package com.example.lyfwanandroid.module.main.fragment;
 
 import com.example.lib.core.mvp.BaseFragment;
 import com.example.lib.core.mvp.MvpPresenter;

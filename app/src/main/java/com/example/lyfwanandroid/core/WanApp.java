@@ -8,6 +8,7 @@ public class WanApp extends Application {
         super.onCreate();
         new InitTaskRunner(this)
                 .add(new X5InitTask())
+                .add(new SmartRefreshInitTask())
                 .start();
     }
 }

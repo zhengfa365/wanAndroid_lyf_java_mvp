@@ -9,8 +9,8 @@ import com.example.lib.core.adapter.SimpleFragmentPagerAdapter;
 import com.example.lib.core.mvp.BaseActivity;
 import com.example.lib.core.mvp.MvpPresenter;
 import com.example.lyfwanandroid.R;
-import com.example.lyfwanandroid.fragment.DrawerFragment;
-import com.example.lyfwanandroid.fragment.MainFragment;
+import com.example.lyfwanandroid.module.main.fragment.DrawerFragment;
+import com.example.lyfwanandroid.module.main.fragment.MainFragment;
 
 import butterknife.BindView;
 
